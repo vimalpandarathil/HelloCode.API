@@ -6,6 +6,6 @@ spec:
   selector:
     app: sidapp01
   ports:
-  - port: 80
-    targetPort: 80
+  - port: 5178
+    targetPort: 5178
   type: LoadBalancer

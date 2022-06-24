@@ -13,10 +13,10 @@ spec:
     spec:
       containers:
       - name: sidapp01
-        image: sbacr02.azurecr.io/sidapp01:v1
+        image: sbacr02.azurecr.io/sidapp01:latest
         resources:
           limits:
             memory: "128Mi"
             cpu: "500m"
         ports:
-        - containerPort: 80
+        - containerPort: 5178
