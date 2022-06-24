@@ -42,5 +42,11 @@ jobs:
       with:
         kubeconfig: ${{secrets.KUBECONFIG}} # Grab the auth token from GitHub secrets
       id: login
+      
+    #Declarative Deployment-02
+    - name: Kubernetes Deployment
+      run: kubectl apply -f deployment.yaml
+    - name: Service Deployment
+      run: kubectl apply -f service.yaml
 
     
