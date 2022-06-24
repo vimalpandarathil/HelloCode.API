@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: sidapp01
+  name: vpapp01
 spec:
   selector:
-    app: sidapp01
+    app: vpapp01
   ports:
   - port: 5178
     targetPort: 5178
